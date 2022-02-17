@@ -1,0 +1,17 @@
+table{
+    background-color: #2e2e2e;
+    color: white;
+    height: 70vh;
+    width: 100%;
+}
+
+td{
+    font-size: 24px;
+    text-align: center;
+    width: 25%;
+}
+
+td.hover{
+    background-color: #595959;
+    cursor: pointer;
+}
