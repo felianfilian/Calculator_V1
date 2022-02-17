@@ -6,33 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator V1</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <h1>Taschenrechner</h1>
+    <div id="resultArea">
+        1234
+    </div>>
     <table>
         <tr>
             <td>7</td>
             <td>8</td>
             <td>9</td>
-            <td>DEL</td>
+            <td class="btnHighlighted">/</td>
         </tr>
         <tr>
             <td>4</td>
             <td>5</td>
             <td>6</td>
-            <td>/</td>
+            <td class="btnHighlighted">*</td>
         </tr>
         <tr>
             <td>1</td>
             <td>2</td>
             <td>3</td>
-            <td>x</td>
+            <td class="btnHighlighted">+</td>
         </tr>
         <tr>
             <td>,</td>
             <td>0</td>
-            <td>=</td>
-            <td>+</td>
+            <td id="btnResult">=</td>
+            <td class="btnHighlighted">-</td>
         </tr>
     </table>
 </body>

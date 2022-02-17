@@ -1,3 +1,7 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 table{
     background-color: #2e2e2e;
     color: white;
@@ -11,7 +15,15 @@ td{
     width: 25%;
 }
 
-td.hover{
+td:hover{
     background-color: #595959;
     cursor: pointer;
+}
+
+#btnResult{
+    background-color: #4f5278;
+}
+
+.btnHighlighted{
+    background-color: #404040;
 }
