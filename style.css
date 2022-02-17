@@ -1,15 +1,17 @@
 body{
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 table{
-    background-color: #2e2e2e;
+    background-color: #616161;
     color: white;
     height: 70vh;
     width: 100%;
 }
 
 td{
+    background-color: #2e2e2e;
     font-size: 24px;
     text-align: center;
     width: 25%;
@@ -22,6 +24,19 @@ td:hover{
 
 #btnResult{
     background-color: #4f5278;
+}
+
+#btnResult:hover{
+    background-color: #6f73a3;
+}
+
+#resultArea{
+    background-color: #4b4b4b;
+    color: white;
+    font-size: 40px;
+    height: 30vh;
+    text-align: right;
+    vertical-align: text-bottom;
 }
 
 .btnHighlighted{
