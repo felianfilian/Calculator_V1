@@ -31,12 +31,16 @@ td:hover{
 }
 
 #resultArea{
+    align-items: flex-end;
     background-color: #4b4b4b;
+    box-sizing: border-box;
     color: white;
+    display: flex;
     font-size: 40px;
     height: 30vh;
+    justify-content: flex-end;
+    padding: 24px;
     text-align: right;
-    vertical-align: text-bottom;
 }
 
 .btnHighlighted{

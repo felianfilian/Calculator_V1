@@ -8,37 +8,44 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
     <div id="resultArea">
-        1234
     </div>
     <table>
         <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td class="btnHighlighted">/</td>
+            <td onclick="DeleteAll()">C</td>
+            <td></td>
+            <td></td>
+            <td onclick="DeleteLast()">DEL</td>
         </tr>
         <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td class="btnHighlighted">*</td>
+            <td onclick="OpAppend(7)">7</td>
+            <td onclick="OpAppend(8)">8</td>
+            <td onclick="OpAppend(9)">9</td>
+            <td class="btnHighlighted" onclick="OpAppend(' / ')">/</td>
         </tr>
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td class="btnHighlighted">+</td>
+            <td onclick="OpAppend(4)">4</td>
+            <td onclick="OpAppend(5)">5</td>
+            <td onclick="OpAppend(6)">6</td>
+            <td class="btnHighlighted" onclick="OpAppend(' * ')">*</td>
         </tr>
         <tr>
-            <td>,</td>
-            <td>0</td>
-            <td id="btnResult">=</td>
-            <td class="btnHighlighted">-</td>
+            <td onclick="OpAppend(1)">1</td>
+            <td onclick="OpAppend(2)">2</td>
+            <td onclick="OpAppend(3)">3</td>
+            <td class="btnHighlighted" onclick="OpAppend(' + ')">+</td>
+        </tr>
+        <tr>
+            <td onclick="OpAppend('.')">,</td>
+            <td onclick="OpAppend(0)">0</td>
+            <td id="btnResult" onclick="GetResult()">=</td>
+            <td class="btnHighlighted" onclick="OpAppend(' - ')">-</td>
         </tr>
     </table>
+    <script src="script.js"></script>
 </body>
 </html>
